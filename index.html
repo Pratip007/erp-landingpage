@@ -757,8 +757,12 @@ body{font-family:Zoho Puvi Regular,-apple-system,BlinkMacSystemFont,San Francisc
 }
 
 .signupform .form-grp {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   position: relative;
+}
+
+.signupform .form-grp:last-of-type {
+  margin-bottom: 0;
 }
 
 .form-field {
@@ -766,15 +770,80 @@ body{font-family:Zoho Puvi Regular,-apple-system,BlinkMacSystemFont,San Francisc
   box-sizing: border-box;
   width: 100%;
   height: 44px;
-  padding: 5px 12px 5px 35px;
+  padding: 10px 14px 10px 40px;
   font-size: 14px;
-  line-height: 1.42857143;
-  color: #555;
-  background-color: #fff;
+  line-height: 1.3;
+  color: #374151;
+  background-color: #ffffff;
   background-image: none;
-  border: 1px solid #d6d6d6;
-  border-radius: 2px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
   font-family: "Zoho Puvi Regular", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+/* Icon styles for form fields */
+.form-grp {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-grp::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+  opacity: 0.6;
+}
+
+/* Company icon */
+.company-field::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%239ca3af' viewBox='0 0 24 24'%3E%3Cpath d='M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z'/%3E%3C/svg%3E");
+}
+
+/* Email icon */
+.email-field::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%239ca3af' viewBox='0 0 24 24'%3E%3Cpath d='M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z'/%3E%3C/svg%3E");
+}
+
+/* Password icon */
+.password-field::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%239ca3af' viewBox='0 0 24 24'%3E%3Cpath d='M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z'/%3E%3C/svg%3E");
+}
+
+/* Country icon */
+.country-field::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%239ca3af' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z'/%3E%3C/svg%3E");
+}
+
+/* State icon */
+.state-field::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%239ca3af' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z'/%3E%3C/svg%3E");
+}
+
+/* Phone icon */
+.phone-field::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%239ca3af' viewBox='0 0 24 24'%3E%3Cpath d='M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z'/%3E%3C/svg%3E");
+}
+
+/* Message icon */
+.message-field::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%239ca3af' viewBox='0 0 24 24'%3E%3Cpath d='M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z'/%3E%3C/svg%3E");
+}
+
+.form-field:focus {
+  outline: none;
+  border-color: #fa393a;
+  box-shadow: 0 0 0 2px rgba(250, 57, 58, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .domain-in .za-country-container {
@@ -782,10 +851,15 @@ body{font-family:Zoho Puvi Regular,-apple-system,BlinkMacSystemFont,San Francisc
 }
 
 select.form-field {
-  border-radius: 0;
+  border-radius: 12px;
   -webkit-appearance: none;
 	-moz-appearance: none;
-	border-radius: 2px;
+	appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  padding-right: 40px;
 }
 
 .select-placeholder-color {
@@ -798,19 +872,19 @@ select.form-field {
   border-color: #1da1f2;
 }
 .form-field::-moz-placeholder {
-  color: #666;
+  color: #9ca3af;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 14px;
   opacity: 1;
 }
 .form-field:-ms-input-placeholder {
-  color: #666;
-	font-size: 16px;
+  color: #9ca3af;
+	font-size: 14px;
 	font-weight: 400;
 }
 .form-field::-webkit-input-placeholder {
-  color: #666;
-	font-size: 16px;
+  color: #9ca3af;
+	font-size: 14px;
 	font-weight: 400;
 }
 .form-field[disabled],
@@ -821,28 +895,55 @@ fieldset[disabled] .form-field {
   opacity: 1;
 }
 .btn {
-	padding: 14px 40px;
+	padding: 12px 18px;
 	color: #FFFFFF;
 	font-weight: 600;
-	font-size: 15px;
-	letter-spacing: -0.03em;
+	font-size: 14px;
+	letter-spacing: 0.2px;
 	display: block;
 	width: 100%;
 	cursor: pointer;
+	border-radius: 6px;
+	transition: all 0.2s ease;
+	text-transform: uppercase;
+	font-family: "Zoho Puvi Semibold", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
 }
 .btn-prim {
-	background-color: #c61b37;
+	background: linear-gradient(135deg, #fa393a 0%, #ff6b6b 100%);
 	color: #fff;
-	transition: all 0.5s ease 0s;
+	transition: all 0.3s ease;
     border: none;
+	box-shadow: 0 4px 12px rgba(250, 57, 58, 0.3);
+	position: relative;
+	overflow: hidden;
+}
+
+.btn-prim::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
 }
 .btn.btn-prim {
 	width: 100%;
 	text-transform: uppercase;
 }
 .btn-prim:hover, .btn-prim:focus {
-	background: #f44557;
+	background: linear-gradient(135deg, #e62e2f 0%, #fa393a 100%);
+	box-shadow: 0 2px 8px rgba(250, 57, 58, 0.3);
 	outline: none;
+}
+
+.btn-prim:hover::before {
+  left: 100%;
+}
+
+.btn-prim:active {
+  transform: none;
 }
 label {
   display: inline-block;
@@ -1047,10 +1148,10 @@ div.field-error a {
   box-shadow: 0 -4px 9.3px 0.7px rgb(142 140 133 / 23%);
 }
 select.form-field,.form-grp input::placeholder { 
-  font-size: 12px;
+  font-size: 16px;
 }
 .form-grp input {
-  font-size: 12px;
+  font-size: 16px;
 }
 .za-captcha-container .form-grp {
   display: flex;
@@ -1061,8 +1162,100 @@ select.form-field,.form-grp input::placeholder {
   left: 88%;
 }
 #data-center-name ,.newsletter-label, .tos-label {
-  font-size: 12px;
+  font-size: 14px;
 }
+
+.za-newsletter-container,
+.za-tos-container {
+  margin: 25px 0;
+  padding: 20px;
+  background: rgba(250, 57, 58, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(250, 57, 58, 0.1);
+  transition: all 0.3s ease;
+}
+
+.za-newsletter-container:hover,
+.za-tos-container:hover {
+  background: rgba(250, 57, 58, 0.08);
+  border-color: rgba(250, 57, 58, 0.2);
+}
+
+.newsletter-checkbox,
+.tos-checkbox {
+  margin-right: 12px;
+  transform: scale(1.2);
+  accent-color: #fa393a;
+}
+
+.newsletter-label,
+.tos-label {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4a5568;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+}
+
+.newsletter-label a,
+.tos-label a {
+  color: #fa393a;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.newsletter-label a:hover,
+.tos-label a:hover {
+  color: #e62e2f;
+  text-decoration: underline;
+}
+.btn-prim.btn-contact {
+  width: 100%;
+  padding: 18px 24px;
+  background: linear-gradient(135deg, #fa393a 0%, #ff6b6b 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Zoho Puvi Semibold", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(250, 57, 58, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-prim.btn-contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn-prim.btn-contact:hover {
+  background: linear-gradient(135deg, #e62e2f 0%, #fa393a 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(250, 57, 58, 0.4);
+}
+
+.btn-prim.btn-contact:hover::before {
+  left: 100%;
+}
+
+.btn-prim.btn-contact:active {
+  transform: translateY(0);
+}
+
 .btn-prim.btn-signup {
   background-color: #fa393a;
   letter-spacing: normal;
@@ -1079,6 +1272,78 @@ select.form-field,.form-grp input::placeholder {
 .zom-btn-filled {
   font-weight: 600;
 }
+
+/* Form validation styles */
+.form-grp input:invalid:not(:placeholder-shown),
+.form-grp select:invalid:not(:placeholder-shown) {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.form-grp input:valid:not(:placeholder-shown),
+.form-grp select:valid:not(:placeholder-shown) {
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+/* Loading state for button */
+.btn-prim.btn-contact:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Success animation */
+@keyframes form-success {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+.form-success {
+  animation: form-success 0.5s ease;
+}
+
+/* Responsive design for form */
+@media screen and (max-width: 768px) {
+  .ZI-form {
+    max-width: 100%;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .ZI-form h3 {
+    font-size: 20px;
+  }
+  
+  .form-grp input, 
+  .form-grp select, 
+  .form-grp textarea {
+    padding: 10px 12px 10px 35px;
+    font-size: 14px;
+  }
+  
+  .btn-prim.btn-contact {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}
+
+/* Simple form styling */
+.ZI-form {
+  max-width: 350px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.ZI-form h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-align: center;
+}
     </style>
     
   </head>
@@ -1091,7 +1356,7 @@ select.form-field,.form-grp input::placeholder {
       
       <div class="hero-section">
         <div class="hero-background">
-          <img src="assect/Washington-DC-Banner-1-1.png" alt="Washington DC Banner" class="hero-bg-image">
+          <img src="assect/DC-Joana-14 (1).jpg" alt="Washington DC Banner" class="hero-bg-image">
           <div class="hero-overlay"></div>
         </div>
         <div class="body-container">
@@ -1104,49 +1369,29 @@ select.form-field,.form-grp input::placeholder {
             
             <div class="ZI-form">
               <form action="/contact" name="contactform" id="contactform" method="post" class="contactform form">
-                <h3 class="form-header">Get in Touch</h3>
-                <div class="form-grp">
-                  <input type="text" id="fullName" class="form-field" name="fullName" tabindex="1" autofocus placeholder="Full Name" required>
+                <h3 class="form-header">Contact Us</h3>
+                <p style="text-align: center; color: #9ca3af; margin-bottom: 20px; font-size: 13px;">Ready to get started? Fill out the form below and we'll get back to you within 24 hours.</p>
+                
+                <div class="form-grp company-field">
+                  <input type="text" id="company" class="form-field" name="company" tabindex="1" autofocus placeholder="Company Name" required>
                 </div>
-                <div class="form-grp">
+                <div class="form-grp email-field">
                   <input type="email" class="form-field" name="email" tabindex="2" autocomplete="on" placeholder="Email Address" required>
                 </div>
-                <div class="form-grp">
-                  <input type="tel" id="phone" class="form-field" name="phone" tabindex="3" placeholder="Phone Number">
+                <div class="form-grp phone-field">
+                  <span style="position: absolute; left: 40px; top: 50%; transform: translateY(-50%); color: #9ca3af; font-size: 14px; z-index: 3;">+1</span>
+                  <input type="tel" id="phone" class="form-field" name="phone" tabindex="3" placeholder="Phone number" style="padding-left: 60px;">
                 </div>
-                <div class="form-grp">
-                  <input type="text" id="company" class="form-field" name="company" tabindex="4" placeholder="Company Name">
-                </div>
-                <div class="form-grp">
-                  <select class="form-field select-placeholder-color" name="inquiryType" id="inquiryType" tabindex="5" required>
-                    <option value="">Select Inquiry Type</option>
-                    <option value="demo">Request Demo</option>
-                    <option value="pricing">Pricing Information</option>
-                    <option value="support">Technical Support</option>
-                    <option value="partnership">Partnership</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                <div class="form-grp">
-                  <textarea class="form-field" name="message" id="message" tabindex="6" placeholder="Your Message" rows="4" style="resize: vertical; min-height: 80px;"></textarea>
+                <div class="form-grp message-field">
+                  <textarea class="form-field" name="message" id="message" tabindex="4" placeholder="Your message..." rows="4" style="resize: vertical; min-height: 80px; padding-left: 40px;"></textarea>
                 </div>
 
-                <div class="za-newsletter-container">
-                  <input type="checkbox" class="newsletter-checkbox" id="newsletter" name="newsletter" value="true"
-                  tabindex="8">
-                  <label class="newsletter-label" for="newsletter">Yes, I would like to receive updates about new features and industry insights.</label>
-                </div>
-                <div class="form-grp za-tos-container">
-                  <label for="tos" class="tos-label">
-                    <input class="tos-checkbox" type="checkbox" id="tos" name="tos" value="true" tabindex="9">
-                    
-                      I agree to the <a href="/terms.html" id="terms-link" target="_blank">Terms of Service</a> and <a href="/privacy.html" id="privacy-link" target="_blank">Privacy Policy</a>.
-                    
-                  </label>
-                </div>
+
                 
-                <div class="form-grp">
-                  <button type="submit" class="btn btn-prim btn-contact" name="contact-submit" id="contact-submit" tabindex="10">Send Message</button>
+                <div class="form-grp" style="margin-top: 20px;">
+                  <button type="submit" class="btn btn-prim btn-contact" name="contact-submit" id="contact-submit" tabindex="10">
+                    <span>Send Message</span>
+                  </button>
                 </div>
                 
 <section class="signupotpcontainer" id="otp-popup" style="display:none">
