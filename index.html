@@ -18,7 +18,6 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title">
-<link rel="SHORTCUT ICON" href="https://www.zohowebstatic.com/sites/zweb/images/favicon.ico" type="image/x-icon">
 <meta property="og:image" content="http://www.zoho.com/inventory/images/inventory-icon-preview.png" />
 
     <link href="https://www.zohowebstatic.com/sites/zweb/css/common/zf/common-header-footer.css" rel="stylesheet" type="text/css">
@@ -181,12 +180,13 @@ body{font-family:Zoho Puvi Regular,-apple-system,BlinkMacSystemFont,San Francisc
           display: inline-block;
           margin: 0 15px;
           vertical-align: middle;
-          width: 80px;
-          height: 60px;
+          width: 100px;
+          height: 100px;
           text-align: center;
-          padding: 10px;
+          padding: 5px;
           border-radius: 8px;
           background: #fff;
+          border: 2px solid #D4A574;
           box-shadow: 0 2px 8px rgba(0,0,0,0.1);
           transition: all 0.3s ease;
         }
@@ -197,9 +197,8 @@ body{font-family:Zoho Puvi Regular,-apple-system,BlinkMacSystemFont,San Francisc
         }
         
         .integration-apps li img {
-          height: 50px;
-          width: auto;
-          max-width: 70px;
+          height: 80px;
+          width: 80px;
           object-fit: contain;
           transition: all 0.3s ease;
           filter: none;
@@ -1271,6 +1270,25 @@ select.form-field,.form-grp input::placeholder {
 }
 .zom-btn-filled {
   font-weight: 600;
+  background-color: #dc2626 !important;
+  color: white !important;
+  padding: 16px 32px !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  font-size: 16px !important;
+  font-family: 'Zoho Puvi Bold', sans-serif !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  transition: all 0.3s ease !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3) !important;
+}
+
+.zom-btn-filled:hover {
+  background-color: #b91c1c !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 16px rgba(220, 38, 38, 0.4) !important;
 }
 
 /* Form validation styles */
@@ -1349,7 +1367,7 @@ select.form-field,.form-grp input::placeholder {
   </head>
 
   <body>
-    <div class="hero-section">
+      <div class="hero-section">
         <div class="hero-background">
           <img src="assect/DC-Joana-14 (1).jpg" alt="Washington DC Banner" class="hero-bg-image">
           <div class="hero-overlay"></div>
@@ -2187,278 +2205,199 @@ select.form-field,.form-grp input::placeholder {
           <a class="zom-btn-filled zom-access" href="/inventory/signup/?utm_source=retail_page&utm_medium=footer&utm_campaign=retail_industry_page" target="_blank" rel="noopener noreferrer">Get Started</a>
         </div>
       </section>
+
+      <!-- New Footer Section -->
+      <footer class="new-footer" style="background-color: #231e23; color: white; padding: 60px 0 40px; margin-top: 80px;">
+        <div class="body-container">
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            
+                                      <!-- Left Section - Redesigned Promotional Banners -->
+             <div style="width: 35%; max-width: 600px;">
+               <div style="margin-bottom: 30px;">
+                 
+                 <!-- Banner 1 - Test Drive -->
+                 <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 0; border-radius: 16px; margin-bottom: 25px; text-align: left; box-shadow: 0 8px 25px rgba(0,0,0,0.15); transition: all 0.4s ease; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-4px) scale(1.02)'" onmouseout="this.style.transform='translateY(0) scale(1)'">
+                   <div style="display: flex; align-items: stretch; height: 220px;">
+                     <div style="flex: 1; padding: 50px 30px; z-index: 2; display: flex; flex-direction: column; justify-content: center;">
+                       <div style="color: #92400e; font-weight: bold; font-size: 18px; margin-bottom: 12px; line-height: 1.3;">Take Luminary for a test drive</div>
+                       <div style="color: #a16207; font-size: 14px; margin-bottom: 15px;">Experience our powerful inventory management firsthand</div>
+                       <button style="background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">Try Now</button>
+                     </div>
+                     <img src="assect/footer images/footer image 1.png" alt="Test Drive" style="width: 250px; height: 100%; object-fit: cover;">
+                   </div>
+                 </div>
+                 
+                                  <!-- Banner 2 - Learn Inventory -->
+                 <div style="background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); padding: 0; border-radius: 16px; margin-bottom: 25px; text-align: left; box-shadow: 0 8px 25px rgba(0,0,0,0.15); transition: all 0.4s ease; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-4px) scale(1.02)'" onmouseout="this.style.transform='translateY(0) scale(1)'">
+                   <div style="display: flex; align-items: stretch; height: 220px;">
+                     <div style="flex: 1; padding: 50px 30px; z-index: 2; display: flex; flex-direction: column; justify-content: center;">
+                       <div style="color: #1e40af; font-weight: bold; font-size: 18px; margin-bottom: 12px; line-height: 1.3;">Learn how to manage inventory!</div>
+                       <div style="color: #1d4ed8; font-size: 14px; margin-bottom: 15px;">Master inventory management with our comprehensive guides</div>
+                       <button style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">Know more</button>
+                     </div>
+                     <img src="assect/footer images/footer image 2.png" alt="Learn Inventory" style="width: 250px; height: 100%; object-fit: cover;">
+                   </div>
+      </div>
+      
+                 <!-- Banner 3 - Affiliate Program -->
+                 <div style="background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%); padding: 0; border-radius: 16px; text-align: left; box-shadow: 0 8px 25px rgba(0,0,0,0.15); transition: all 0.4s ease; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-4px) scale(1.02)'" onmouseout="this.style.transform='translateY(0) scale(1)'">
+                   <div style="display: flex; align-items: stretch; height: 220px;">
+                     <div style="flex: 1; padding: 50px 30px; z-index: 2; display: flex; flex-direction: column; justify-content: center;">
+                       <div style="color: #581c87; font-weight: bold; font-size: 18px; margin-bottom: 12px; line-height: 1.3;">Join our affiliate program</div>
+                       <div style="color: #7c3aed; font-size: 14px; margin-bottom: 15px;">Earn while you grow with our partnership program</div>
+                       <button style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">Learn more</button>
+                     </div>
+                     <img src="assect/footer images/footer image 3.png" alt="Affiliate Program" style="width: 250px; height: 100%; object-fit: cover;">
+                   </div>
+                 </div>
+               </div>
     </div>
+    
+            <!-- Right Section - Footer Links -->
+            <div style="width: 61%;">
+              <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                
+                <!-- Column 1 -->
+                <div style="width: 30%; margin-bottom: 30px;">
+                  <h4 style="color: white; font-size: 16px; margin-bottom: 15px;">Features</h4>
+                  <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Order Management Software</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Warehouse Management</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Inventory Management System</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Inventory Tracking Software</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Inventory Control</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Order Fulfillment</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Marketplace Integrations</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Inventory Reports</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Order Templates</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Inventory Mobile App</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Purchase Order Templates</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">All Features</a></li>
+            </ul>
+                  
+                  <h4 style="color: white; font-size: 16px; margin: 30px 0 15px;">Solutions</h4>
+                  <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Manufacturers</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Multi-channel Selling</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Ecommerce Inventory</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Shopify Integration</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Etsy Integration</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Retail Management</a></li>
+            </ul>
+                </div>
+                
+                <!-- Column 2 -->
+                <div style="width: 30%; margin-bottom: 30px;">
+                  <h4 style="color: white; font-size: 16px; margin-bottom: 15px;">Free Tools</h4>
+                  <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Free SKU Generator</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Reorder Point Calculator</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Economic Order Quantity</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Break Even Calculator</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Inventory Turnover Ratio</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Free Barcode Generator</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Purchase Order Generator</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Packing Slip Generator</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Shipping Label Generator</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Wholesale Price Calculator</a></li>
+            </ul>
+                  
+                  <h4 style="color: white; font-size: 16px; margin: 30px 0 15px;">Major Integrations</h4>
+                  <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Luminary Books</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Luminary CRM</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">USPS</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Easyship</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Slack</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Crossfire EDI</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">All Integrations</a></li>
+            </ul>
+        </div>
+      
+                <!-- Column 3 -->
+                <div style="width: 30%; margin-bottom: 30px;">
+                  <h4 style="color: white; font-size: 16px; margin-bottom: 15px;">Quick Links</h4>
+                  <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Pricing</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Pricing Comparison</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Integrations</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Customers</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Free Inventory Software</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Best Inventory Software</a></li>
+  </ul>
+  
+                  <h4 style="color: white; font-size: 16px; margin: 30px 0 15px;">Resources</h4>
+                  <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Help Documentation</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">FAQs</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">API Documentation</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Holiday Resources</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Webinars</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">What's New</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Small Business Guides</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Blogs</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Support</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: #9ca3af; text-decoration: none; font-size: 14px;">Jumpstart</a></li>
+        </ul>
+                </div>
+      </div>
+      
+                             <!-- Contact and Social Section -->
+               <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid #374151;">
+                 <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+                   <div style="color: #9ca3af; font-size: 14px;">
+                     <div style="margin-bottom: 10px;">
+                       <a href="mailto:support@luminary.com" style="color: #4bbadc; text-decoration: none;">support@luminary.com</a>
+    </div>
+                     <div style="margin-bottom: 10px;">
+                       <span>+1 (555) 789-4321 (Monday - Friday 9:00 AM - 6:00 PM EST)</span>
+  </div>
+                     <div>
+                       <span>1234 Innovation Drive, Suite 200<br>
+                       San Francisco, CA 94105<br>
+                       United States</span>
+  </div>
+        </div>
+                  
+                                     <div style="display: flex; align-items: center; gap: 20px;">
+                     <div>
+                       <div style="color: white; font-size: 14px; margin-bottom: 10px;">Connect With Us</div>
+                       <div style="display: flex; gap: 10px;">
+                         <a href="#" style="text-decoration: none;">
+                           <div style="width: 35px; height: 35px; background: #1da1f2; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">𝕏</div>
+                         </a>
+                         <a href="#" style="text-decoration: none;">
+                           <div style="width: 35px; height: 35px; background: #1877f2; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">f</div>
+                         </a>
+                         <a href="#" style="text-decoration: none;">
+                           <div style="width: 35px; height: 35px; background: #e4405f; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">📷</div>
+                         </a>
+                         <a href="#" style="text-decoration: none;">
+                           <div style="width: 35px; height: 35px; background: #ff0000; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">▶</div>
+                         </a>
+                         <a href="#" style="text-decoration: none;">
+                           <div style="width: 35px; height: 35px; background: #0077b5; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">in</div>
+                         </a>
+          </div>
+          </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+  </div>
 
 
 
     <style>.zom-footer *{-webkit-box-sizing:border-box;box-sizing:border-box}.footer,.zoho-apps,.zom-footer,ul.zdomainlink li,ul.zdomainlink li.zcurrentdomain a{font-family:Zoho Puvi Regular}ul.zdomainlink li a{font-weight:600}ul.zdomainlink li.zcurrentdomain a{font-weight:400}.footer-d-flex{display:-webkit-box!important;display:-webkit-flex!important;display:-ms-flexbox!important;display:flex!important}.align-items-center{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.justify-between{-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.flex-wrap{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}div.zom-footer{border-top:1px solid #e2e2e2;background-color:#231e23}.footer-links{max-width:100%;padding:40px 6% 40px 7.5%;font-size:0}.footer-links ul{float:none}.footer-links li,.footer-links p{color:#fff}.footer-links li a,.footer-links li button{color:#ccc}.footer-links li:first-child{text-transform:capitalize;font-size:16px;line-height:22px}.banners-container{width:29%;max-width:500px;margin-right:7%;text-align:center}.banners-container a img{margin-bottom:20px;max-width:90%;-webkit-transition:-webkit-transform .2s ease;transition:-webkit-transform .2s ease;-o-transition:transform .2s ease;transition:transform .2s ease;transition:transform .2s ease,-webkit-transform .2s ease}.banners-container a img:hover{-webkit-transform:scale(1.03);-ms-transform:scale(1.03);transform:scale(1.03)}.banners-container .rating img{width:30%}.banners-container .rating img:nth-child(2){margin:0 2.5%}.banners-container .rating:after{content:"";border-top:1px solid hsla(0,0%,100%,.2);display:block;margin:30px 0}.links-container{width:61%}.resource-links{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;max-height:950px;-webkit-align-content:space-between;-ms-flex-line-pack:justify;align-content:space-between;width:100%}.resource-links ul{margin-bottom:30px}.resource-links li{padding:7px 0}.resource-links li a{position:relative}.resource-links li a:after{content:"";position:absolute;left:0;bottom:-5px;width:0;border-bottom:1px solid #fff}.resource-links li a:hover{color:#fff}.resource-links li a:hover:after{width:100%;-webkit-transition:width .5s;-o-transition:width .5s;transition:width .5s}.global .arrange-col{-webkit-box-ordinal-group:2;-webkit-order:1;-ms-flex-order:1;order:1}.call-us li{display:inline-block}.call-us li:not(:last-child){margin-right:15px}.footer-links .call-us{margin-top:30px}.footer-links .select-edition{margin:60px 0 0}.edition-select-box{background-color:rgba(0,0,0,0);border:1px solid #fff;border-radius:4px;width:220px;cursor:pointer}.edition-select-box,.edition-select-box a{display:block;padding:10px;position:relative}.edition-select-box .edition-dropdown{position:absolute;right:12px;top:-3px;border:4px solid rgba(0,0,0,0)}.edition-select-box .edition-dropdown b{background-image:url(/inventory/images/common-sprite-1x.png?v=4);background-size:162px 421px;background-position:-128px -400px;display:block;width:9px;height:5px;margin-top:15px}.edition-select-box .edition-dropdown b.open-caret{background-position:-115px -400px;width:9px;height:5px}.edition-select-list{background-color:#333;margin-top:-3px;border:1px solid #ccc;width:440px;display:none;-webkit-box-shadow:0 12px 34px 0 rgba(0,0,0,.1);box-shadow:0 12px 34px 0 rgba(0,0,0,.1);position:absolute;z-index:1;font-size:0}.edition-list-container{display:inline-block;width:50%}.edition-col-4 button:not(:last-child){border-bottom:1px solid #ccc}.edition-col-4 button{display:block;padding:10px;background-color:#333;border:none;width:100%;cursor:pointer}.edition-col-4 button:hover{background-color:#666}.dangled-edition button{border-right:1px solid #ccc}.edition-label{text-align:left;margin:2px 0 0 34px;color:#fff}.footer-links .mobile-icons{margin-top:60px;max-width:300px;-webkit-box-flex:1;-webkit-flex:1 0 0%;-ms-flex:1 0 0%;flex:1 0 0%;min-width:285px}.store-icon{display:none}.mobile-icons li:first-child{-webkit-flex-basis:100%;-ms-flex-preferred-size:100%;flex-basis:100%}.mobile-icons li:not(:first-child){padding-right:.3%;height:50px}.mobile-icons img{height:40px;max-width:48%}.icons-social>a{float:left;margin-right:2px}.social-icons-facebook,.social-icons-instagram,.social-icons-twitter,.social-icons-youtube{width:38px;height:42px;background:url(/inventory/images/social-icons-footer-1x.png) no-repeat}.contact-email{color:#4bbadc!important;font-size:16px!important}@media only screen and (-o-min-device-pixel-ratio:2/1),only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min-device-pixel-ratio:2),only screen and (min-resolution:2dppx),only screen and (min-resolution:192dpi){.social-icons-facebook,.social-icons-instagram,.social-icons-twitter,.social-icons-youtube{background:url(/inventory/images/social-icons-footer-2x.png) no-repeat;background-size:153px 34px}}.social-icons-facebook{background-position:-39px 0}.social-icons-instagram{background-position:-78px 0}.social-icons-twitter{background-position:-1px 0}.social-icons-youtube{background-position:-118px 0}.footer-links .zoho-privacy{margin-top:40px;border-top:1px solid hsla(0,0%,100%,.2);padding-top:25px;position:relative;overflow:visible}.footer-links .zoho-privacy img{height:65px}.zoho-apps>li:first-child,.zoho-privacy>li:first-child{position:absolute;top:-20px;left:50%;margin-right:-50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);padding:10px 30px;background-color:#231e23}.footer-links .zoho-privacy ul li{height:75px;padding:5px 0}.zoho-apps{max-width:1100px;margin:60px auto;padding:35px 0 0;border-top:1px solid #ccc;overflow:visible;position:relative;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}.zoho-apps>li:not(:first-child){padding:20px 10px;min-width:220px}.zoho-apps>li:not(:first-child) a{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}.zoho-apps li:first-child{font-size:16px;line-height:22px;font-weight:600;background-color:#fff}.zoho-apps li a{font-size:13px;font-weight:400;line-height:16px;color:#000}.payroll-supported [class*=-logo]{margin-right:5px}@media only screen and (-o-min-device-pixel-ratio:2/1),only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min-device-pixel-ratio:2),only screen and (min-resolution:2dppx),only screen and (min-resolution:192dpi){.edition-select-box .edition-dropdown b{background-image:url(/inventory/images/common-sprite-2x.png?v=4)}}@media screen and (max-width:1300px){.footer-links{padding:40px 3%}.resource-links{width:35%}}@media screen and (max-width:1130px){.footer-links{padding:40px 4%}.banners-container,.links-container{width:100%;max-width:none;margin:0 auto;display:block}.banners-container a img{display:none}.banners-container .rating img{max-width:120px}.zoho-apps>li:not(:first-child) a{-webkit-box-pack:start;-webkit-justify-content:start;-ms-flex-pack:start;justify-content:start}.resource-links{max-height:930px}}@media screen and (min-width:751px){.edition-select-list.one-container{width:220px}.edition-select-list.one-container .edition-list-container{width:100%}.edition-select-li-left-col{border-right:1px solid #ccc}.footer-links .zoho-privacy{margin-top:60px}.footer-links .zoho-privacy ul{-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}}@media screen and (max-width:750px){.edition-select-list{width:220px}.edition-select-list:not(.one-container) .edition-list-container:first-child{border-right:none}.edition-list-container:first-child{border-bottom:1px solid #ccc}.links-container .resource-links{-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;max-height:none;width:100%}.resource-links ul{width:100%;margin-bottom:0}.resource-links li{-webkit-transition:padding .1s ease-in-out,height .4s ease-in-out;-o-transition:padding .1s ease-in-out,height .4s ease-in-out;transition:padding .1s ease-in-out,height .4s ease-in-out}.resource-links ul:not(.show-list) li:not(:first-child){padding:0;height:0;opacity:0}.resource-links ul:not(.show-list) a{display:none}.resource-links li:first-child{padding:0 0 10px;position:relative}.resource-links li:first-child:after{border-right:2px solid #fff;border-bottom:2px solid #fff;padding:3px;content:"";position:absolute;right:20px;top:8px;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transition:-webkit-transform .2s ease-in-out;transition:-webkit-transform .2s ease-in-out;-o-transition:transform .2s ease-in-out;transition:transform .2s ease-in-out;transition:transform .2s ease-in-out,-webkit-transform .2s ease-in-out}.resource-links ul:after{content:"";border-bottom:1px solid hsla(0,0%,100%,.2);display:block}.resource-links .show-list li:first-child:after{-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}.footer-links .support-container ul{margin-top:40px}.mobile-icons .store-icon{display:block}.edition-list-container{width:100%}.footer-links .zoho-privacy>li:first-child{padding:10px 20px}.zoho-privacy ul li{margin-right:4%}.zoho-apps li a{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.other-app-desc{display:none}.zoho-apps [class*=-logo]{margin:0 0 5px}.zoho-apps>li:not(:first-child){width:50%;min-width:auto;padding:20px 0}.zoho-apps.payroll-supported>li:not(:first-child){width:33.33%}}@media screen and (max-width:421px){.app-description{text-align:center}.zoho-apps li:first-child{text-align:center}}@media screen and (max-width:800px){.resource-links{max-height:985px}}</style>
 
 
-  <div class="zom-footer">
-  <div class="footer-links footer-d-flex flex-wrap">
-    
-    <div class="banners-container">
-      <div class="rating">
-        <img src="/inventory/images/rating-getapp.png" alt="Online Inventory Management Software - GetApp Rating | Zoho Inventory" title="Online Inventory Management Software - GetApp Rating | Zoho Inventory" loading="lazy"  width="120" height="60">
-        <img src="/inventory/images/rating-capterra.png" alt="Online Inventory Management Software - Capterra Rating | Zoho Inventory" title="Online Inventory Management Software - Capterra Rating | Zoho Inventory" loading="lazy"  width="120" height="60">
-        <img src="/inventory/images/rating-g2.png" alt="Online Inventory Management Software - G2 Rating | Zoho Inventory" title="Online Inventory Management Software - G2 Rating | Zoho Inventory" loading="lazy"  width="120" height="60">
-      </div>
-      
-      
-        <a href="/inventory/inventory-software-demo/#/gettingstarted" target="_blank" rel="noopener noreferrer" aria-label="Take inventory for test drive | Online Inventory Management Software - Zoho Inventory">
-          <img src="/inventory/footer/take-inventory-for-test-drive.png" alt="Take inventory for test drive | Online Inventory Management Software - Zoho Inventory" loading="lazy">
-        </a>
-      
-      <a href="/inventory/resources/" target="_blank" rel="noopener noreferrer" aria-label="Learn how to manage inventory | Online Inventory Management Software - Zoho Inventory">
-        <img src="/inventory/footer/learn-how-to-manage-inventory.png" alt="Learn how to manage inventory | Online Inventory Management Software - Zoho Inventory" loading="lazy">
-      </a>
-      <a href="https://www.zoho.com/affiliate.html?src=zinventory" target="_blank" rel="noopener noreferrer" aria-label="Affiliate Program | Online Inventory Management Software - Zoho Inventory">
-        <img src="/inventory/footer/affiliate-program.png" alt="Affiliate Program | Online Inventory Management Software - Zoho Inventory" loading="lazy">
-      </a>
-      <a href="https://www.zoho.com/commerce?src=ZOM_Footer" target="_blank" rel="noopener noreferrer" aria-label="Zoho commerce| Online Inventory Management Software - Zoho Inventory">
-        <img src="/inventory/footer/commerce-footer.png" alt="Zoho commerce| Online Inventory Management Software - Zoho Inventory" loading="lazy">
-      </a>
-    </div>
-    
-    <div class="links-container">
-      
-        <div class="footer-d-flex">
-          <div class="resource-links footer-d-flex flex-wrap ">
-            <ul>
-              <li>Features</li>
-              <li><a href="/inventory/order-management-software/">Order Management Software</a></li>
-              <li><a href="/inventory/warehouse-management/">Warehouse Management</a></li>
-              <li><a href="/inventory/inventory-management-system/">Inventory Management System</a></li>
-              <li><a href="/inventory/inventory-tracking-system/">Inventory Tracking Software</a></li>
-              <li><a href="/inventory/inventory-control-system/">Inventory Control</a></li>
-              <li><a href="/inventory/order-fulfillment-software/">Order Fulfillment</a></li>
-              <li><a href="/inventory/amazon-inventory-management-software/">Marketplace Integrations</a></li>
-              <li><a href="/inventory/inventory-reports/">Inventory Reports</a></li>
-              <li><a href="/templates/purchaseorders/">Order Templates</a></li>
-              <li><a href="/inventory/mobile-apps/">Inventory Mobile App</a></li>
-              <li><a href="/inventory/purchase-order-templates/">Purchase Order Templates</a></li>
-              <li><a href="/inventory/features/">All Features</a></li>
-            </ul>
-            <ul>
-              <li>Solutions</li>
-              <li><a href="/inventory/inventory-software-for-manufacturers/">Manufacturers</a></li>
-              <li><a href="/inventory/multichannel-selling-software/">Multi-channel Selling Businesses</a></li>
-              <li><a href="/inventory/multichannel-inventory-management/">Multichannel Inventory Management</a></li>
-              <li><a href="/inventory/ecommerce-inventory-management-software/">Ecommerce Inventory Management</a></li>
-              
-              <li><a href="/inventory/shopify-inventory-management-software/">Shopify Inventory Management</a></li>
-              
-              <li><a href="/inventory/etsy-inventory-management-software/">Etsy Inventory Management</a></li>
-              
-              
-              
-              <li><a href="/inventory/inventory-software-for-retail/">Retail Inventory Management</a></li>
-            </ul>
-            <ul>
-              <li>Alternative Software Comparison</li>
-              <li><a href="/inventory/tradegecko-alternative/">TradeGecko vs. Luminary Inventory</a></li>
-              
-                <li><a href="/inventory/stitch-labs-alternative/">Stitch Labs</a></li>
-              
-            </ul>
-            <ul>
-              <li>Free Tools</li>
-              <li><a href="/inventory/sku-generator/" target="_blank"  rel="noopener noreferrer">Free SKU Generator</a></li>
-              <li><a href="/inventory/reorder-point-calculator/" target="_blank"  rel="noopener noreferrer">Reorder Point Calculator</a></li>
-              <li><a href="/inventory/economic-order-quantity/" target="_blank"  rel="noopener noreferrer">Economic Order Quantity Calculator</a></li>
-              <li><a href="/inventory/break-even-point-calculator/" target="_blank"  rel="noopener noreferrer">Break Even Point Calculator</a></li>
-              <li><a href="/inventory/inventory-turnover-ratio/" target="_blank"  rel="noopener noreferrer">Inventory Turnover Ratio Calculator</a></li>
-              <li><a href="/inventory/free-barcode-generator/" target="_blank"  rel="noopener noreferrer">Free Barcode Generator</a></li>
-              <li><a href="/inventory/purchaseorder-generator/" target="_blank"  rel="noopener noreferrer">Free Purchase Order Generator</a></li>
-              <li><a href="/inventory/packing-slip-generator/" target="_blank"  rel="noopener noreferrer">Free Packing Slip Generator</a></li>
-              <li><a href="/inventory/shipping-label-generator/" target="_blank"  rel="noopener noreferrer">Free Shipping Label Generator</a></li>
-              <li><a href="/inventory/free-wholesale-price-calculator/" target="_blank"  rel="noopener noreferrer">Wholesale Price Calculator</a></li>
-            </ul>
-            <ul>
-              <li>Major Integrations</li>
-              <li><a href="/inventory/inventory-accounting-software/">Zoho Books</a></li>
-              <li><a href="/inventory/crm-integration/">Zoho CRM</a></li>
-              
-              <li><a href="/inventory/usps-integration/">USPS</a></li>
-              <li><a href="/inventory/easyship-integration/">Easyship</a></li>
-              <li><a href="/inventory/slack-integration/">Slack</a></li>
-              <li><a href="/inventory/crossfire-edi/">Crossfire EDI</a></li>
-              <li><a href="/inventory/addons/">All Integrations</a></li>
-            </ul>
-            <ul>
-              <li>General Learning</li>
-              <li><a href="/inventory/what-is-inventory-management/">What is Inventory Management?</a></li>
-              <li><a href="/inventory/logistics-and-supply-chain-management/">What is Logistics Management?</a></li>
-              <li><a href="/inventory/inventory-dictionary/3pl.html">Inventory Dictionary</a></li>
-              <li><a href="/inventory/wms-dictionary/3pl.html">Warehouse Dictionary</a></li>
-              <li><a href="/financeplus/gdpr.html">GDPR and Zoho Finance</a></li>
-            </ul>
-            <ul>
-              <li>Quick Links</li>
-              <li><a href="/inventory/pricing/">Pricing</a></li>
-              <li><a href="/inventory/pricing-comparison/">Pricing Comparison</a></li>
-              <li><a href="/inventory/addons/">Integrations</a></li>
-              <li><a href="/inventory/customer-testimonials/">Customers</a></li>
-              <li><a href="/inventory/free-inventory-management-software/" target="_blank"  rel="noopener noreferrer">Free Inventory Management Software</a></li>
-              <li><a href="/inventory/best-inventory-management-software/" target="_blank"  rel="noopener noreferrer">Best Inventory Management Software</a></li>
-            </ul>
-            <ul>
-              <li>Partners</li>
-              <li><a href="/inventory/zoho-inventory-partner-program/">Partner program</a></li>
-            </ul>
-            
-            <ul>
-              <li>Resources</li>
-              <li><a href="/inventory/help/">Help Documentation</a></li>
-              <li><a href="/inventory/kb/general-overview/"> FAQs</a></li>
-              <li><a href="/inventory/api/v1/">API Documentation</a></li>
-              <li><a href="/inventory/holiday-season/">Holiday Resources</a></li>
-              <li><a href="/inventory/webinars/">Webinars</a></li>
-              <li><a href="/inventory/whats-new/">What's New</a></li>
-              <li><a href="/inventory/small-business-guides/">Small Business Guides</a></li>
-              <li><a href="/inventory/blog">Blogs</a></li>
-              
-              <li><a href="/inventory/support/">Support</a></li>
-              <li><a href="/inventory/jumpstart/">Jumpstart</a></li>
-            </ul>
-          </div>
-        </div>
-      
-      
-  <ul class="call-us">
-    <li style="text-transform: none;">
-      
-        <a href="/inventory/contact-support/" class="contact-email">Send us an Email</a>&nbsp;(or)&nbsp;
-        <span id="ip-based-contact">Global - +1 (844)3165544 (Monday - Friday 24 x 5)</span>
-      
-    </li>
-  </ul>
   
-      <div class="footer-d-flex flex-wrap support-container">
-        
+ 
 
-        <ul class="mobile-icons footer-d-flex flex-wrap">
-          <li>Available On</li>
-          <li>
-            <a href="https://itunes.apple.com/us/app/zoho-inventory/id1037960494?mt=8" target="_blank" rel="noopener noreferrer" aria-label="iOS inventory app - App store| Zoho Inventory">
-              <img class="mobile-badge" src="/inventory/mobile/appstore.svg" alt="iOS inventory app - App store| Zoho Inventory" width="119" height="40" loading="lazy">
-            </a>
-            &nbsp;
-            <a href="https://play.google.com/store/apps/details?id=com.zoho.inventory&referrer=utm_source%3Dzom_website%26utm_medium%3Dwebsite_footer" target="_blank" rel="nofollow" aria-label="Android inventory app - Google Play| Zoho Inventory">
-              <img class="mobile-badge" src="/inventory/mobile/playstore-badge.svg" alt="Android inventory app - Google Play| Zoho Inventory" width="119" height="40" loading="lazy"/>
-            </a>
-          </li>
-        </ul>
-        <ul class="mobile-icons footer-d-flex flex-wrap" style="min-width: 200px;">
-          <li>Connect With Us</li>
-          <li class="icons-social">
-            <a class="social-icons-twitter" href="https://twitter.com/ZohoInventory" target="_blank" rel="noopener noreferrer" aria-label="Connect with twitter"></a>
-            <a class="social-icons-facebook" href="https://www.facebook.com/ZohoInventory/" target="_blank" rel="noopener noreferrer" aria-label="Connect with facebook"></a>
-            <a class="social-icons-instagram" href="https://www.instagram.com/zoho_inventory/" target="_blank" rel="noopener noreferrer" aria-label="Connect with instagram"></a>
-            <a class="social-icons-youtube" href="https://www.youtube.com/channel/UCInxOTZX17vb3jR7GcgnF8A/featured" target="_blank" rel="noopener noreferrer" aria-label="Connect with youtube"></a>
-          </li>
-        </ul>
-      </div>
-      
-      <ul class="zoho-privacy">
-        <li>Choose Privacy. Choose Zoho.</li>
-        
-        <li>
-          <ul class="footer-d-flex flex-wrap">
-            <li>
-              <img src="/inventory/images/iso-9001.svg" alt="Bsi ISO/IES 27001 | Information Security Management Badge - Online Inventory Management Software - Zoho Inventory" loading="lazy" width="116" height="65">
-            </li>
-            <li>
-              <img src="/inventory/images/iso-iec-27017-27018.svg" alt="Bsi ISO/IES 27017 | Security Controls for Cloud Services - Protection of Personally Identifiable Information Badge -Online Inventory Management Software - Zoho Inventory" loading="lazy" width="191" height="65">
-            </li>
-            <li>
-              <img src="/inventory/images/iso-iec-27001.svg" alt="Bsi ISO 9001-2015 | Quality Management System Badge - Online Inventory Management Software - ZZoho Inventory" loading="lazy" width="120" height="65">
-            </li>
-            <li>
-              <img src="/inventory/images/soc-2.png" alt="AICPA SOC Badge | Online Inventory Management Software - Zoho Inventory" loading="lazy" width="65" height="65">
-            </li>
-            <li>
-              <img src="/inventory/images/gdpr.png" alt="GDPR Badge | Online Inventory Management Software - Zoho Inventory" loading="lazy" width="65" height="65">
-            </li>
-          </ul>
-        </li>
-      </ul>
-      
 
-    </div>
-  </div>
-  
-  </div>
-  <div style="padding:0 8%;">
-  <ul class="zoho-apps  footer-d-flex flex-wrap">
-    <li>Other Zoho Finance &amp; Operations Apps</li>
-    <li>
-      <a href="/books/?footer_source=inventory" target="_blank"  rel="noopener noreferrer" class="footer-d-flex align-items-center">
-        <div class="books-logo"></div>
-        <div><span class="other-app-title">Books</span>
-          <div class="other-app-desc">Online Accounting Software</div>
-        </div>
-      </a>
-    </li>
-    <li>
-      <a href="/billing/?footer_source=inventory" target="_blank" rel="noopener noreferrer" class="footer-d-flex align-items-center">
-        <div class="billing-logo"></div>
-        <div class="app-description">
-          <span class="other-app-title">Billing</span>
-          <div class="other-app-desc">End-to-End Billing Solution</div>
-        </div>
-      </a>
-    </li>
-    <li>
-      <a href="/expense/?footer_source=inventory" target="_blank" rel="noopener noreferrer" class="footer-d-flex align-items-center">
-        <div class="expense-logo"></div>
-        <div class="app-description">
-          <span class="other-app-title">Expense</span>
-          <div class="other-app-desc">Online Expense Reporting</div>
-        </div>
-      </a>
-    </li>
-    <li>
-      <a href="/checkout/?footer_source=inventory" target="_blank" rel="noopener noreferrer" class="footer-d-flex align-items-center">
-        <div class="checkout-logo"></div>
-        <div class="app-description">
-          <span class="other-app-title">Checkout</span>
-          <div class="other-app-desc">Online Payments Software</div>
-        </div>
-      </a>
-    </li>
-    
-      <li>
-        <a href="/invoice/?footer_source=inventory" target="_blank" rel="noopener noreferrer" class="footer-d-flex align-items-center">
-          <div class="invoice-logo"></div>
-          <div class="app-description">
-            <span class="other-app-title">Invoice</span>
-            <div class="other-app-desc">100% Free Invoicing Solution</div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="https://zoho.to/ZOM_footerQP" target="_blank" rel="noopener noreferrer" class="footer-d-flex align-items-center">
-          <div class="commerce-logo"></div>
-          <div class="app-description">
-            <span class="other-app-title">Commerce</span>
-            <div class="other-app-desc">Ecommerce Software</div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="https://zoho.to/crx-promo-inven" target="_blank" rel="noopener noreferrer" class="footer-d-flex align-items-center">
-          <div class="practice-logo"></div>
-          <div class="app-description">
-            <span class="other-app-title">Practice</span>
-            <div class="other-app-desc">Practice Management Software</div>
-          </div>
-        </a>
-      </li>
-  </ul>
-  </div>
-
-<div class="common-footer"></div>
 <script type="text/javascript">
   if (!window.countryCode) {
     var zipCookie = getCookieValue('zip');
