@@ -1408,126 +1408,144 @@ select.form-field,.form-grp input::placeholder {
   </head>
 
   <body>
-      <!-- New Header with Dark Blue Background -->
-      <header style="background: #0a182e; box-shadow: 0 2px 20px rgba(0,0,0,0.2); position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 18px 0;">
+    
+    
+                <!-- New Responsive Header with Company Logo -->
+      <header class="main-header" style="background: #0a182e; box-shadow: 0 2px 20px rgba(0,0,0,0.2); position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 15px 0;">
         <div class="body-container">
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <!-- Logo -->
-            <div style="display: flex; align-items: center;">
-              <div style="width: 36px; height: 36px; background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 12px;">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0a182e" stroke-width="2">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                </svg>
-              </div>
-              <span style="font-family: 'Zoho Puvi Bold', sans-serif; font-size: 22px; font-weight: 700; color: white;">Luminary ERP</span>
+          <div class="header-content" style="display: flex; justify-content: space-between; align-items: center; position: relative;">
+            <!-- Company Logo -->
+            <div class="header-logo" style="display: flex; align-items: center;">
+              <img src="assect/company loho/logo.png" alt="Company Logo" class="company-logo" style="height: 40px; width: auto; object-fit: contain;">
             </div>
         
-            <!-- Navigation -->
-            <nav style="display: flex; gap: 30px; align-items: center;">
-              <a href="#" style="color: #e2e8f0; text-decoration: none; font-family: 'Zoho Puvi Regular', sans-serif; font-size: 15px; font-weight: 500; transition: color 0.3s ease;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#e2e8f0'">Platform</a>
-              <a href="#" style="color: #e2e8f0; text-decoration: none; font-family: 'Zoho Puvi Regular', sans-serif; font-size: 15px; font-weight: 500; transition: color 0.3s ease;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#e2e8f0'">Solutions</a>
-              <a href="#" style="color: #e2e8f0; text-decoration: none; font-family: 'Zoho Puvi Regular', sans-serif; font-size: 15px; font-weight: 500; transition: color 0.3s ease;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#e2e8f0'">Partners</a>
-              <a href="#" style="color: #e2e8f0; text-decoration: none; font-family: 'Zoho Puvi Regular', sans-serif; font-size: 15px; font-weight: 500; transition: color 0.3s ease;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#e2e8f0'">Resources</a>
-              <a href="#" style="color: #e2e8f0; text-decoration: none; font-family: 'Zoho Puvi Regular', sans-serif; font-size: 15px; font-weight: 500; transition: color 0.3s ease;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#e2e8f0'">About Us</a>
-              <button style="background: white; color: #0a182e; border: none; padding: 10px 20px; border-radius: 6px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; font-family: 'Zoho Puvi Semibold', sans-serif; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" onmouseover="this.style.backgroundColor='#f8fafc'; this.style.transform='translateY(-1px)'" onmouseout="this.style.backgroundColor='white'; this.style.transform='translateY(0)'">
+            <!-- Desktop Navigation -->
+            <nav class="header-nav desktop-nav" style="display: flex; gap: 30px; align-items: center;">
+              <a href="#" class="nav-link" style="color: #e2e8f0; text-decoration: none; font-family: 'Zoho Puvi Regular', sans-serif; font-size: 15px; font-weight: 500; transition: color 0.3s ease;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#e2e8f0'">Platform</a>
+              <a href="#" class="nav-link" style="color: #e2e8f0; text-decoration: none; font-family: 'Zoho Puvi Regular', sans-serif; font-size: 15px; font-weight: 500; transition: color 0.3s ease;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#e2e8f0'">Solutions</a>
+              <a href="#" class="nav-link" style="color: #e2e8f0; text-decoration: none; font-family: 'Zoho Puvi Regular', sans-serif; font-size: 15px; font-weight: 500; transition: color 0.3s ease;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#e2e8f0'">Partners</a>
+              <a href="#" class="nav-link" style="color: #e2e8f0; text-decoration: none; font-family: 'Zoho Puvi Regular', sans-serif; font-size: 15px; font-weight: 500; transition: color 0.3s ease;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#e2e8f0'">Resources</a>
+              <a href="#" class="nav-link" style="color: #e2e8f0; text-decoration: none; font-family: 'Zoho Puvi Regular', sans-serif; font-size: 15px; font-weight: 500; transition: color 0.3s ease;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#e2e8f0'">About Us</a>
+              <button class="header-cta" style="background: white; color: #0a182e; border: none; padding: 10px 20px; border-radius: 6px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; font-family: 'Zoho Puvi Semibold', sans-serif; box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);" onmouseover="this.style.backgroundColor='#f1f5f9'; this.style.transform='translateY(-1px)'" onmouseout="this.style.backgroundColor='white'; this.style.transform='translateY(0)'">
                 Contact Sales
               </button>
             </nav>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
+          
+          <!-- Mobile Navigation Menu -->
+          <nav class="mobile-nav" style="display: none; background: #0a182e; border-top: 1px solid #1a2a4a; margin-top: 15px; padding: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+            <div class="mobile-nav-content" style="display: flex; flex-direction: column; gap: 15px;">
+              <a href="#" class="mobile-nav-link" style="color: #e2e8f0; text-decoration: none; font-family: 'Zoho Puvi Regular', sans-serif; font-size: 16px; font-weight: 500; padding: 12px 0; border-bottom: 1px solid #1a2a4a; transition: color 0.3s ease;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#e2e8f0'">Platform</a>
+              <a href="#" class="mobile-nav-link" style="color: #e2e8f0; text-decoration: none; font-family: 'Zoho Puvi Regular', sans-serif; font-size: 16px; font-weight: 500; padding: 12px 0; border-bottom: 1px solid #1a2a4a; transition: color 0.3s ease;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#e2e8f0'">Solutions</a>
+              <a href="#" class="mobile-nav-link" style="color: #e2e8f0; text-decoration: none; font-family: 'Zoho Puvi Regular', sans-serif; font-size: 16px; font-weight: 500; padding: 12px 0; border-bottom: 1px solid #1a2a4a; transition: color 0.3s ease;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#e2e8f0'">Partners</a>
+              <a href="#" class="mobile-nav-link" style="color: #e2e8f0; text-decoration: none; font-family: 'Zoho Puvi Regular', sans-serif; font-size: 16px; font-weight: 500; padding: 12px 0; border-bottom: 1px solid #1a2a4a; transition: color 0.3s ease;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#e2e8f0'">Resources</a>
+              <a href="#" class="mobile-nav-link" style="color: #e2e8f0; text-decoration: none; font-family: 'Zoho Puvi Regular', sans-serif; font-size: 16px; font-weight: 500; padding: 12px 0; border-bottom: 1px solid #1a2a4a; transition: color 0.3s ease;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#e2e8f0'">About Us</a>
+              <button class="mobile-cta" style="background: white; color: #0a182e; border: none; padding: 15px 20px; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; font-family: 'Zoho Puvi Semibold', sans-serif; margin-top: 10px; width: 100%;" onmouseover="this.style.backgroundColor='#f1f5f9'" onmouseout="this.style.backgroundColor='white'">
+                Contact Sales
+              </button>
+            </div>
+          </nav>
         </div>
       </header>
 
       <!-- Enhanced Hero Section -->
-      <div class="hero-section" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); padding: 120px 0 80px; min-height: 700px; position: relative; overflow: hidden;">
+      <div id="main-content" class="hero-section" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); padding: 120px 0 80px; min-height: 700px; position: relative; overflow: hidden;">
         <!-- Background Decorative Elements -->
-        <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: linear-gradient(135deg, rgba(10, 24, 46, 0.1) 0%, rgba(26, 42, 74, 0.1) 100%); border-radius: 50%; z-index: 1;"></div>
-        <div style="position: absolute; bottom: -100px; left: -100px; width: 300px; height: 300px; background: linear-gradient(135deg, rgba(10, 24, 46, 0.05) 0%, rgba(26, 42, 74, 0.05) 100%); border-radius: 50%; z-index: 1;"></div>
+        <div class="hero-bg-element hero-bg-1" style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: linear-gradient(135deg, rgba(10, 24, 46, 0.1) 0%, rgba(26, 42, 74, 0.1) 100%); border-radius: 50%; z-index: 1;"></div>
+        <div class="hero-bg-element hero-bg-2" style="position: absolute; bottom: -100px; left: -100px; width: 300px; height: 300px; background: linear-gradient(135deg, rgba(10, 24, 46, 0.05) 0%, rgba(26, 42, 74, 0.05) 100%); border-radius: 50%; z-index: 1;"></div>
         
         <div class="body-container" style="position: relative; z-index: 2;">
-          <div style="display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto;">
+          <div class="hero-content" style="display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto;">
             
             <!-- Enhanced Left Content Section -->
-            <div style="width: 50%; padding-right: 80px;">
+            <div class="hero-text-content" style="width: 50%; padding-right: 80px;">
               <!-- Badge -->
-              <div style="display: inline-block; background: linear-gradient(135deg, #0a182e 0%, #1a2a4a 100%); color: white; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 600; margin-bottom: 20px; font-family: 'Zoho Puvi Semibold', sans-serif; text-transform: uppercase; letter-spacing: 0.5px;">
+              <div class="hero-badge" style="display: inline-block; background: linear-gradient(135deg, #0a182e 0%, #1a2a4a 100%); color: white; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 600; margin-bottom: 20px; font-family: 'Zoho Puvi Semibold', sans-serif; text-transform: uppercase; letter-spacing: 0.5px;">
                 🏛️ Government Contractors
             </div>
             
-              <h1 style="font-size: 56px; font-weight: 700; color: #0a182e; margin-bottom: 25px; line-height: 1.1; font-family: 'Zoho Puvi Bold', sans-serif;">
+              <h1 class="hero-title" style="font-size: 56px; font-weight: 700; color: #0a182e; margin-bottom: 25px; line-height: 1.1; font-family: 'Zoho Puvi Bold', sans-serif;">
                 ERP Built for<br>
                 <span style="background: linear-gradient(135deg, #0a182e 0%, #1a2a4a 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Government Contractors</span>
               </h1>
               
-              <h2 style="font-size: 22px; font-weight: 600; color: #4a5568; margin-bottom: 30px; font-family: 'Zoho Puvi Semibold', sans-serif;">
+              <h2 class="hero-subtitle" style="font-size: 22px; font-weight: 600; color: #4a5568; margin-bottom: 30px; font-family: 'Zoho Puvi Semibold', sans-serif;">
                 DCAA Compliant, Proven, Secure
               </h2>
               
-              <p style="font-size: 18px; color: #4a5568; line-height: 1.7; margin-bottom: 40px; font-family: 'Zoho Puvi Regular', sans-serif;">
+              <p class="hero-description" style="font-size: 18px; color: #4a5568; line-height: 1.7; margin-bottom: 40px; font-family: 'Zoho Puvi Regular', sans-serif;">
                 Streamline project accounting, procurement, and compliance – trusted by federal suppliers and DCAA-audited firms.
               </p>
               
               <!-- Enhanced CTA Buttons -->
-              <div style="display: flex; gap: 20px; align-items: center;">
-                <button style="background: linear-gradient(135deg, #0a182e 0%, #1a2a4a 100%); color: white; border: none; padding: 18px 36px; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; font-family: 'Zoho Puvi Semibold', sans-serif; box-shadow: 0 8px 25px rgba(10, 24, 46, 0.3);" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 35px rgba(10, 24, 46, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(10, 24, 46, 0.3)'">
+              <div class="hero-cta-buttons" style="display: flex; gap: 20px; align-items: center;">
+                <button class="hero-cta-primary" style="background: linear-gradient(135deg, #0a182e 0%, #1a2a4a 100%); color: white; border: none; padding: 18px 36px; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; font-family: 'Zoho Puvi Semibold', sans-serif; box-shadow: 0 8px 25px rgba(10, 24, 46, 0.3);" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 35px rgba(10, 24, 46, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(10, 24, 46, 0.3)'">
                   Get Started Free
                 </button>
-                <button style="background: transparent; color: #0a182e; border: 2px solid #0a182e; padding: 18px 36px; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; font-family: 'Zoho Puvi Semibold', sans-serif;" onmouseover="this.style.backgroundColor='#0a182e'; this.style.color='white'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#0a182e'">
+                <button class="hero-cta-secondary" style="background: transparent; color: #0a182e; border: 2px solid #0a182e; padding: 18px 36px; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; font-family: 'Zoho Puvi Semibold', sans-serif;" onmouseover="this.style.backgroundColor='#0a182e'; this.style.color='white'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#0a182e'">
                   Watch Demo
                 </button>
                 </div>
               
               <!-- Trust Indicators -->
-              <div style="display: flex; align-items: center; margin-top: 40px; gap: 30px;">
-                <div style="display: flex; align-items: center; gap: 8px;">
-                  <div style="width: 20px; height: 20px; background: #10b981; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+              <div class="hero-trust-indicators" style="display: flex; align-items: center; margin-top: 40px; gap: 30px;">
+                <div class="trust-item" style="display: flex; align-items: center; gap: 8px;">
+                  <div class="trust-icon" style="width: 20px; height: 20px; background: #10b981; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3">
                       <polyline points="20,6 9,17 4,12"></polyline>
                     </svg>
                 </div>
-                  <span style="font-size: 14px; color: #6b7280; font-family: 'Zoho Puvi Regular', sans-serif;">DCAA Compliant</span>
+                  <span class="trust-text" style="font-size: 14px; color: #6b7280; font-family: 'Zoho Puvi Regular', sans-serif;">DCAA Compliant</span>
                 </div>
-                <div style="display: flex; align-items: center; gap: 8px;">
-                  <div style="width: 20px; height: 20px; background: #10b981; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3">
-                      <polyline points="20,6 9,17 4,12"></polyline>
-                    </svg>
-                  </div>
-                  <span style="font-size: 14px; color: #6b7280; font-family: 'Zoho Puvi Regular', sans-serif;">FedRAMP Ready</span>
-                </div>
-                <div style="display: flex; align-items: center; gap: 8px;">
-                  <div style="width: 20px; height: 20px; background: #10b981; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                <div class="trust-item" style="display: flex; align-items: center; gap: 8px;">
+                  <div class="trust-icon" style="width: 20px; height: 20px; background: #10b981; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3">
                       <polyline points="20,6 9,17 4,12"></polyline>
                     </svg>
                   </div>
-                  <span style="font-size: 14px; color: #6b7280; font-family: 'Zoho Puvi Regular', sans-serif;">24/7 Support</span>
+                  <span class="trust-text" style="font-size: 14px; color: #6b7280; font-family: 'Zoho Puvi Regular', sans-serif;">FedRAMP Ready</span>
+                </div>
+                <div class="trust-item" style="display: flex; align-items: center; gap: 8px;">
+                  <div class="trust-icon" style="width: 20px; height: 20px; background: #10b981; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3">
+                      <polyline points="20,6 9,17 4,12"></polyline>
+                    </svg>
+                  </div>
+                  <span class="trust-text" style="font-size: 14px; color: #6b7280; font-family: 'Zoho Puvi Regular', sans-serif;">24/7 Support</span>
                 </div>
               </div>
                 </div>
 
             <!-- Enhanced Right Image Section -->
-            <div style="width: 45%; text-align: center; position: relative;">
+            <div class="hero-image-section" style="width: 45%; text-align: center; position: relative;">
               <!-- Floating Elements -->
-              <div style="position: absolute; top: -20px; right: 50px; width: 60px; height: 60px; background: linear-gradient(135deg, #0a182e 0%, #1a2a4a 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; animation: float 3s ease-in-out infinite; z-index: 3;">
+              <div class="floating-element floating-1" style="position: absolute; top: -20px; right: 50px; width: 60px; height: 60px; background: linear-gradient(135deg, #0a182e 0%, #1a2a4a 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; animation: float 3s ease-in-out infinite; z-index: 3;">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
                   <path d="M9 12l2 2 4-4"/>
                   <path d="M21 12c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                 </svg>
               </div>
               
-              <div style="position: absolute; bottom: 50px; left: 20px; width: 50px; height: 50px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; animation: float 3s ease-in-out infinite 1s; z-index: 3;">
+              <div class="floating-element floating-2" style="position: absolute; bottom: 50px; left: 20px; width: 50px; height: 50px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; animation: float 3s ease-in-out infinite 1s; z-index: 3;">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
                   <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
                 </svg>
               </div>
               
               <!-- Main Image Container -->
-              <div style="width: 450px; height: 450px; border-radius: 50%; overflow: hidden; margin: 0 auto; box-shadow: 0 25px 50px rgba(0,0,0,0.15); position: relative; z-index: 2; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+              <div class="hero-main-image" style="width: 450px; height: 450px; border-radius: 50%; overflow: hidden; margin: 0 auto; box-shadow: 0 25px 50px rgba(0,0,0,0.15); position: relative; z-index: 2; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
                 <img src="assect/Washington-DC-Banner-1-1.png" alt="U.S. Capitol Building" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
                 </div>
               
               <!-- Image Border Glow -->
-              <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 470px; height: 470px; border-radius: 50%; background: linear-gradient(135deg, rgba(10, 24, 46, 0.1) 0%, rgba(26, 42, 74, 0.1) 100%); z-index: 1;"></div>
+              <div class="hero-image-glow" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 470px; height: 470px; border-radius: 50%; background: linear-gradient(135deg, rgba(10, 24, 46, 0.1) 0%, rgba(26, 42, 74, 0.1) 100%); z-index: 1;"></div>
             </div>
             
           </div>
@@ -1538,6 +1556,648 @@ select.form-field,.form-grp input::placeholder {
         @keyframes float {
           0%, 100% { transform: translateY(0px); }
           50% { transform: translateY(-10px); }
+        }
+        
+        /* Responsive Design - Mobile First Approach */
+        
+        /* Mobile Navigation Toggle */
+        .mobile-menu-toggle {
+          display: none;
+          flex-direction: column;
+          cursor: pointer;
+          padding: 5px;
+          z-index: 1001;
+        }
+        
+        .mobile-menu-toggle span {
+          width: 25px;
+          height: 3px;
+          background-color: white;
+          margin: 3px 0;
+          transition: 0.3s;
+        }
+        
+        /* Company Logo Responsive */
+        .company-logo {
+          transition: height 0.3s ease;
+          max-width: 200px;
+        }
+        
+        /* Mobile Navigation Menu */
+        .mobile-nav {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: #0a182e;
+          border-top: 1px solid #1a2a4a;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+          z-index: 999;
+        }
+        
+        .mobile-nav.active {
+          display: block;
+        }
+        
+        .mobile-nav-link {
+          display: block;
+          padding: 15px 20px;
+          border-bottom: 1px solid #1a2a4a;
+          font-size: 16px;
+          font-weight: 500;
+          transition: all 0.3s ease;
+          color: #e2e8f0;
+        }
+        
+        .mobile-nav-link:hover {
+          background-color: #1a2a4a;
+          color: white !important;
+        }
+        
+        .mobile-cta {
+          margin: 15px 20px;
+          width: calc(100% - 40px);
+        }
+        
+        /* Skip Link for Accessibility */
+        .skip-link {
+          position: absolute;
+          top: -40px;
+          left: 6px;
+          background: #0a182e;
+          color: white;
+          padding: 8px;
+          text-decoration: none;
+          border-radius: 4px;
+          z-index: 10000;
+          font-family: 'Zoho Puvi Regular', sans-serif;
+        }
+        
+        .skip-link:focus {
+          top: 6px;
+        }
+        
+        /* Focus styles for accessibility */
+        .nav-link:focus,
+        .header-cta:focus,
+        .hero-cta-primary:focus,
+        .hero-cta-secondary:focus {
+          outline: 2px solid #0a182e;
+          outline-offset: 2px;
+        }
+        
+        /* Smooth scrolling */
+        html {
+          scroll-behavior: smooth;
+        }
+        
+        /* Mobile Performance Optimizations */
+        @media screen and (max-width: 768px) {
+          .hero-section {
+            will-change: auto;
+          }
+          
+          .floating-element {
+            will-change: auto;
+          }
+          
+          .hero-main-image {
+            will-change: auto;
+          }
+        }
+        
+        /* Responsive Breakpoints */
+        @media screen and (max-width: 1200px) {
+          .body-container {
+            width: 95%;
+            padding: 0 20px;
+          }
+          
+          /* Header Responsive */
+          .main-header {
+            padding: 15px 0 !important;
+          }
+          
+          .desktop-nav {
+            gap: 20px !important;
+          }
+          
+          .nav-link {
+            font-size: 14px !important;
+          }
+          
+          .header-cta {
+            padding: 8px 16px !important;
+            font-size: 13px !important;
+          }
+          
+          .company-logo {
+            height: 35px !important;
+          }
+          
+          /* Hero Section Responsive */
+          .hero-section {
+            padding: 100px 0 60px !important;
+            min-height: 600px !important;
+          }
+          
+          .hero-content {
+            flex-direction: column !important;
+            text-align: center;
+            gap: 40px;
+          }
+          
+          .hero-text-content {
+            width: 100% !important;
+            padding-right: 0 !important;
+          }
+          
+          .hero-image-section {
+            width: 100% !important;
+          }
+          
+          .hero-title {
+            font-size: 48px !important;
+            line-height: 1.2 !important;
+          }
+          
+          .hero-subtitle {
+            font-size: 20px !important;
+          }
+          
+          .hero-description {
+            font-size: 16px !important;
+            max-width: 600px;
+            margin: 0 auto 30px;
+          }
+          
+          .hero-main-image {
+            width: 350px !important;
+            height: 350px !important;
+          }
+          
+          .hero-image-glow {
+            width: 370px !important;
+            height: 370px !important;
+          }
+          
+          /* Floating elements responsive */
+          .floating-element {
+            display: none;
+          }
+        }
+        
+        @media screen and (max-width: 768px) {
+          /* Header Responsive */
+          .main-header {
+            padding: 12px 0 !important;
+          }
+          
+          .header-content {
+            flex-direction: row !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            gap: 0;
+          }
+          
+          .desktop-nav {
+            display: none !important;
+          }
+          
+          .mobile-menu-toggle {
+            display: flex !important;
+            position: relative;
+            right: 0;
+            top: 0;
+            transform: none;
+          }
+          
+          .company-logo {
+            height: 32px !important;
+          }
+          
+          /* Mobile Menu Active State */
+          .mobile-menu-toggle.active span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+          }
+          
+          .mobile-menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+          }
+          
+          .mobile-menu-toggle.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+          }
+          
+          /* Mobile Navigation */
+          .mobile-nav {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #0a182e;
+            border-top: 1px solid #1a2a4a;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            z-index: 999;
+            display: none;
+          }
+          
+          .mobile-nav.active {
+            display: block;
+          }
+          
+          /* Hero Section Mobile */
+          .hero-section {
+            padding: 80px 0 40px !important;
+            min-height: 500px !important;
+          }
+          
+          .hero-title {
+            font-size: 36px !important;
+            line-height: 1.3 !important;
+          }
+          
+          .hero-subtitle {
+            font-size: 18px !important;
+          }
+          
+          .hero-description {
+            font-size: 15px !important;
+            line-height: 1.6 !important;
+          }
+          
+          .hero-text-content {
+            padding: 0 20px;
+          }
+          
+          /* Mobile Content Spacing */
+          .hero-badge {
+            margin-bottom: 15px !important;
+          }
+          
+          .hero-title {
+            margin-bottom: 20px !important;
+          }
+          
+          .hero-subtitle {
+            margin-bottom: 25px !important;
+          }
+          
+          .hero-description {
+            margin-bottom: 30px !important;
+          }
+          
+          .hero-main-image {
+            width: 280px !important;
+            height: 280px !important;
+          }
+          
+          .hero-image-glow {
+            width: 300px !important;
+            height: 300px !important;
+          }
+          
+          /* CTA Buttons Mobile */
+          .hero-cta-buttons {
+            flex-direction: column !important;
+            gap: 15px;
+            align-items: stretch;
+          }
+          
+          .hero-cta-buttons button {
+            width: 100%;
+            padding: 16px 24px !important;
+            font-size: 15px !important;
+            min-height: 48px !important;
+            touch-action: manipulation;
+          }
+          
+          /* Mobile Touch Improvements */
+          .nav-link,
+          .mobile-nav-link,
+          .header-cta,
+          .mobile-cta {
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+          }
+          
+          /* Trust Indicators Mobile */
+          .hero-trust-indicators {
+            flex-direction: column !important;
+            gap: 15px;
+            align-items: center;
+          }
+          
+          .hero-trust-indicators .trust-item {
+            width: 100%;
+            justify-content: center;
+          }
+          
+          /* Floating Elements Mobile */
+          .floating-element {
+            display: none !important;
+          }
+          
+          /* Background elements mobile */
+          .hero-bg-element {
+            display: none !important;
+          }
+        }
+        
+        @media screen and (max-width: 480px) {
+          .body-container {
+            width: 100%;
+            padding: 0 15px;
+          }
+          
+          /* Extra Small Mobile Improvements */
+          .main-header {
+            padding: 8px 0 !important;
+          }
+          
+          .header-content {
+            gap: 8px !important;
+          }
+          
+          /* Header Small Mobile */
+          .main-header {
+            padding: 10px 0 !important;
+          }
+          
+          .header-content {
+            gap: 10px !important;
+          }
+          
+          .company-logo {
+            height: 28px !important;
+          }
+          
+          .mobile-menu-toggle {
+            padding: 3px !important;
+          }
+          
+          .mobile-menu-toggle span {
+            width: 22px !important;
+            height: 2px !important;
+          }
+          
+          /* Mobile Navigation Small Screen */
+          .mobile-nav-link {
+            padding: 12px 15px !important;
+            font-size: 15px !important;
+          }
+          
+          .mobile-cta {
+            margin: 10px 15px !important;
+            padding: 12px 15px !important;
+            font-size: 15px !important;
+          }
+          
+          /* Hero Section Small Mobile */
+          .hero-section {
+            padding: 60px 0 30px !important;
+            min-height: 400px !important;
+          }
+          
+          .hero-title {
+            font-size: 28px !important;
+            line-height: 1.4 !important;
+          }
+          
+          .hero-subtitle {
+            font-size: 16px !important;
+          }
+          
+          .hero-description {
+            font-size: 14px !important;
+          }
+          
+          .hero-main-image {
+            width: 220px !important;
+            height: 220px !important;
+          }
+          
+          .hero-image-glow {
+            width: 240px !important;
+            height: 240px !important;
+          }
+          
+          /* Badge Mobile */
+          .hero-badge {
+            font-size: 10px !important;
+            padding: 6px 12px !important;
+          }
+          
+          /* CTA Buttons Small Mobile */
+          .hero-cta-buttons button {
+            padding: 14px 20px !important;
+            font-size: 14px !important;
+          }
+          
+          /* Trust Indicators Small Mobile */
+          .hero-trust-indicators {
+            gap: 10px !important;
+          }
+          
+          .trust-text {
+            font-size: 12px !important;
+          }
+        }
+        
+        /* Landscape Mobile Support */
+        @media screen and (max-width: 768px) and (orientation: landscape) {
+          .hero-section {
+            padding: 60px 0 30px !important;
+            min-height: 400px !important;
+          }
+          
+          .hero-title {
+            font-size: 32px !important;
+          }
+          
+          .hero-main-image {
+            width: 200px !important;
+            height: 200px !important;
+          }
+          
+          .hero-image-glow {
+            width: 220px !important;
+            height: 220px !important;
+          }
+          
+          .hero-cta-buttons {
+            flex-direction: row !important;
+            gap: 10px;
+          }
+          
+          .hero-cta-buttons button {
+            width: auto !important;
+            flex: 1;
+          }
+        }
+        
+        /* Tablet Specific Adjustments */
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+          /* Tablet Header */
+          .main-header {
+            padding: 12px 0 !important;
+          }
+          
+          .company-logo {
+            height: 36px !important;
+          }
+          /* Header Tablet */
+          .desktop-nav {
+            gap: 25px !important;
+          }
+          
+          .nav-link {
+            font-size: 14px !important;
+          }
+          
+          .header-cta {
+            padding: 8px 16px !important;
+            font-size: 13px !important;
+          }
+          
+          .company-logo {
+            height: 38px !important;
+          }
+          
+          /* Hero Section Tablet */
+          .hero-content {
+            gap: 30px;
+          }
+          
+          .hero-text-content {
+            padding-right: 40px !important;
+          }
+          
+          .hero-title {
+            font-size: 42px !important;
+          }
+          
+          .hero-main-image {
+            width: 400px !important;
+            height: 400px !important;
+          }
+          
+          .hero-image-glow {
+            width: 420px !important;
+            height: 420px !important;
+          }
+          
+          /* Floating elements tablet */
+          .floating-element {
+            display: none;
+          }
+        }
+        
+        /* Large Desktop Enhancements */
+        @media screen and (min-width: 1400px) {
+          /* Header Large Desktop */
+          .main-header {
+            padding: 20px 0 !important;
+          }
+          
+          .company-logo {
+            height: 45px !important;
+          }
+          
+          .nav-link {
+            font-size: 16px !important;
+          }
+          
+          .header-cta {
+            padding: 12px 24px !important;
+            font-size: 15px !important;
+          }
+          
+          /* Hero Section Large Desktop */
+          .hero-section {
+            padding: 140px 0 100px !important;
+            min-height: 800px !important;
+          }
+          
+          .hero-title {
+            font-size: 64px !important;
+          }
+          
+          .hero-main-image {
+            width: 500px !important;
+            height: 500px !important;
+          }
+          
+          .hero-image-glow {
+            width: 520px !important;
+            height: 520px !important;
+          }
+        }
+        
+        /* Landscape Mobile */
+        @media screen and (max-height: 500px) and (orientation: landscape) {
+          .hero-section {
+            padding: 60px 0 30px !important;
+            min-height: 350px !important;
+          }
+          
+          .hero-section .body-container > div > div:last-child > div:first-child {
+            width: 200px !important;
+            height: 200px !important;
+          }
+          
+          .hero-section .body-container > div > div:last-child > div:first-child + div {
+            width: 220px !important;
+            height: 220px !important;
+          }
+        }
+        
+        /* Accessibility Improvements */
+        @media (prefers-reduced-motion: reduce) {
+          .hero-section .body-container > div > div:last-child > div:nth-child(1),
+          .hero-section .body-container > div > div:last-child > div:nth-child(2) {
+            animation: none;
+          }
+          
+          * {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+          }
+        }
+        
+        /* High Contrast Mode */
+        @media (prefers-contrast: high) {
+          .hero-section {
+            background: #ffffff !important;
+          }
+          
+          .hero-section h1,
+          .hero-section h2 {
+            color: #000000 !important;
+          }
+          
+          .hero-section p {
+            color: #333333 !important;
+          }
+        }
+        
+        /* Print Styles */
+        @media print {
+          header {
+            position: static !important;
+            box-shadow: none !important;
+          }
+          
+          .hero-section {
+            padding: 20px 0 !important;
+            background: white !important;
+          }
+          
+          .hero-section .body-container > div > div:last-child {
+            display: none !important;
+          }
         }
       </style>
                 
@@ -2974,6 +3634,159 @@ select.form-field,.form-grp input::placeholder {
     $zoho.livedesk = $zoho.salesiq;
   }
 </script>
+
+<!-- Mobile Menu JavaScript -->
+<script>
+  function toggleMobileMenu() {
+    const mobileNav = document.querySelector('.mobile-nav');
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    
+    if (mobileNav.classList.contains('active')) {
+      mobileNav.classList.remove('active');
+      mobileToggle.classList.remove('active');
+    } else {
+      mobileNav.classList.add('active');
+      mobileToggle.classList.add('active');
+    }
+  }
+  
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', function(event) {
+    const mobileNav = document.querySelector('.mobile-nav');
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    
+    if (!mobileNav.contains(event.target) && !mobileToggle.contains(event.target)) {
+      mobileNav.classList.remove('active');
+      mobileToggle.classList.remove('active');
+    }
+  });
+  
+  // Handle window resize
+  window.addEventListener('resize', function() {
+    const mobileNav = document.querySelector('.mobile-nav');
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    
+    if (window.innerWidth > 768) {
+      mobileNav.classList.remove('active');
+      mobileToggle.classList.remove('active');
+    }
+  });
+  
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+  
+  // Add loading animation
+  window.addEventListener('load', function() {
+    document.body.classList.add('loaded');
+  });
+  
+  // Intersection Observer for animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+  
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-in');
+      }
+    });
+  }, observerOptions);
+  
+  // Observe elements for animation
+  document.querySelectorAll('.hero-section, .feature-card, .testimonial-section, .integrations-section').forEach(el => {
+    observer.observe(el);
+  });
+</script>
+
+<!-- Additional Responsive CSS -->
+<style>
+  /* Mobile Menu Active State */
+  .mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  /* Loading Animation */
+  body:not(.loaded) {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  body.loaded {
+    opacity: 1;
+  }
+  
+  /* Animate In Class */
+  .animate-in {
+    animation: fadeInUp 0.6s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Touch Device Optimizations */
+  @media (hover: none) and (pointer: coarse) {
+    .hero-section .body-container > div > div:last-child > div:first-child:hover {
+      transform: none !important;
+    }
+    
+    button:hover {
+      transform: none !important;
+    }
+  }
+  
+  /* Focus Styles for Accessibility */
+  button:focus,
+  a:focus {
+    outline: 2px solid #0a182e;
+    outline-offset: 2px;
+  }
+  
+  /* Skip to Content Link */
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #0a182e;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 10000;
+  }
+  
+  .skip-link:focus {
+    top: 6px;
+  }
+</style>
 
 
 
