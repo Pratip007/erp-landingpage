@@ -1,0 +1,138 @@
+/* Global Styles */
+body {
+  font-family: Zoho Puvi Regular, -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+h1, h3 {
+  font-family: Zoho Puvi Bold, -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 58px;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: Zoho Puvi Semibold, -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
+  font-size: 44px;
+  line-height: 50px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.body-container {
+  max-width: 1350px;
+  width: 90%;
+  margin: auto;
+}
+
+/* Footer Section Styles */
+.footer-section {
+  margin-top: 80px;
+  background-color: #e6f3e6;
+  color: #0a182e;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.footer-section-content {
+  background-color: #e6f3e6;
+  border-radius: 20px;
+  text-align: center;
+  padding: 40px;
+}
+
+.footer-section-content h2 {
+  color: #0a2e12;
+  margin: 0 auto 20px;
+  line-height: 42px;
+}
+
+.footer-section-content .footer-desc {
+  color: #2c5e2c;
+  margin-bottom: 20px;
+}
+
+.zom-btn-filled.zom-access {
+  background-color: #2e622e;
+  color: white;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* Attractive Footer Styles */
+.attractive-footer {
+  background: #0a182e;
+  color: white;
+  padding: 40px 0 20px;
+  margin-top: 40px;
+}
+
+.attractive-footer .body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.attractive-footer .copyright {
+  color: #8b9bb4;
+  font-size: 12px;
+  margin: 0;
+}
+
+.attractive-footer .footer-links a {
+  color: #4bbadc;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.social-icon:hover {
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .body-container {
+    width: 90%;
+  }
+
+  .footer-section-content {
+    padding: 30px 10px;
+  }
+
+  .footer-section-content h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+} 
